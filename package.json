@@ -79,7 +79,7 @@
     "sumchecker": "^3.0.1",
     "type-fest": "^0.13.1",
     "undici-types": "^5.26.5",
-    "universalify": "^0.1.2",
+    "universalify": "^2.0.1",
     "wrappy": "^1.0.2",
     "yallist": "^4.0.0",
     "yauzl": "^2.10.0"
