@@ -44,7 +44,7 @@
     "get-intrinsic": "^1.1.3",
     "get-stream": "^5.2.0",
     "global-agent": "^3.0.0",
-    "globalthis": "^1.0.3",
+    "globalthis": "^1.0.4",
     "got": "^11.8.5",
     "graceful-fs": "^4.2.10",
     "has": "^1.0.3",
