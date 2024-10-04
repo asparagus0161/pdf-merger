@@ -47,7 +47,7 @@
     "globalthis": "^1.0.3",
     "got": "^11.8.5",
     "graceful-fs": "^4.2.10",
-    "has": "^1.0.3",
+    "has": "^1.0.4",
     "has-property-descriptors": "^1.0.0",
     "has-symbols": "^1.0.3",
     "http-cache-semantics": "^4.1.1",
