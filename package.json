@@ -81,7 +81,7 @@
     "undici-types": "^5.26.5",
     "universalify": "^0.1.2",
     "wrappy": "^1.0.2",
-    "yallist": "^4.0.0",
+    "yallist": "^5.0.0",
     "yauzl": "^2.10.0"
   },
   "bugs": {
