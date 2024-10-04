@@ -82,7 +82,7 @@
     "universalify": "^0.1.2",
     "wrappy": "^1.0.2",
     "yallist": "^4.0.0",
-    "yauzl": "^2.10.0"
+    "yauzl": "^3.1.3"
   },
   "bugs": {
     "url": "https://github.com/electron/electron-quick-start/issues"
