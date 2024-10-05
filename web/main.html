@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Merger</title>
+</head>
+<body>
+  <h1>Select PDFs to Merge</h1>
+  <input type="file" id="pdf-input" accept=".pdf" multiple style="display:none" />
+  <button id="select-pdfs-btn">Select PDFs</button>
+  <p id="selected-files"></p>
+
+  <script type="text/javascript">
+    document.getElementById('select-pdfs-btn').addEventListener('click', function() {
+      document.getElementById('pdf-input').click();
+    });
+
+    document.getElementById('pdf-input').addEventListener('change', function(event) {
+      const files = Array.from(event.target.files);
+      const fileNames = files.map(file => file.name);
+      document.getElementById('selected-files').innerText = "Selected PDFs: " + fileNames.join(", ");
+      
+      // Pass the selected files' paths to the Python backend
+      const filePaths = files.map(file => file.path);
+      eel.process_selected_pdfs(filePaths);  // Call Python function
+    });
+  </script>
+</body>
+</html>
