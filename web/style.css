@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 4 equal-width columns */
+    gap: 10px;
+}
+
+.pdf-item {
+    display: flex;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    width: 250px;
+    height: 100px; /* Added height to control the item size */
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    text-align: center;
+    line-height: 1.2;
+    cursor: move;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pdf-item:hover {
+    background-color: #e0e0e0;
+    overflow: visible; /* Allow viewing full name on hover if needed */
+}
+
+.dragging {
+    opacity: 0.5;
+    /* Make the dragged item slightly transparent */
+}
