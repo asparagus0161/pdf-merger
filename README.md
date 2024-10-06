@@ -48,6 +48,10 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+4. Running the program
+Program was made with EEL which allows the backend to be with Python,
+To launch the project run `main.py` 
+
 # Building an executable
 
 ```
