@@ -9,3 +9,30 @@ A desktop application that allows users to visually select, arrange, and merge P
 - Cross-platform web application
 
 ![](image.png)
+
+#Development Setup
+
+1. Clone or download the repository:
+
+```
+bashCopygit clone [repository-url]
+cd pdf-merger
+```
+
+2. Create and activate a virtual environment:
+
+```
+python -m venv venv
+
+# On Windows:
+venv\Scripts\activate
+
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+3. Install development dependencies:
+
+```
+pip install -r requirements.txt
+```
