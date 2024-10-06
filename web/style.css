@@ -1,38 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
 .pdf-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 4 equal-width columns */
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .pdf-item {
-    display: flex;
-    justify-content: center; /* Centers the text horizontally */
-    align-items: center; /* Centers the text vertically */
-    width: 250px;
-    height: 100px; /* Added height to control the item size */
-    background-color: #f4f4f4;
-    border: 2px solid #ccc;
-    text-align: center;
-    line-height: 1.2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
     cursor: move;
-    padding: 5px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    background: white;
+    transition: opacity 0.2s;
 }
 
-.pdf-item:hover {
-    background-color: #e0e0e0;
-    overflow: visible; /* Allow viewing full name on hover if needed */
-}
-
-.dragging {
+.pdf-item.dragging {
     opacity: 0.5;
-    /* Make the dragged item slightly transparent */
+}
+
+.thumbnail-container {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail-container canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.pdf-title {
+    text-align: center;
+    word-break: break-word;
+    font-size: 0.9em;
+}
+
+#select-pdfs-btn, #merge-pdfs-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
 }
