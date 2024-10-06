@@ -53,3 +53,5 @@ pip install -r requirements.txt
 ```
 python -m eel main.py web --onefile --noconsole
 ```
+
+Distribution will be on `dist` folder as `main.exe`
