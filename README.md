@@ -1,7 +1,6 @@
 # PDF Merger
 A desktop application that allows users to visually select, arrange, and merge PDF files. Built with Python, Eel, and PDF.js.
 
----
 ### Features
 - Visual PDF selection and preview
 - Drag-and-drop interface for reordering PDFs
@@ -11,7 +10,6 @@ A desktop application that allows users to visually select, arrange, and merge P
 
 ![](image.png)
 
----
 # Frontend
 In `web` folder
 - HTML/CSS
@@ -23,7 +21,6 @@ In `web` folder
 - eel
 - pypdf
 
----
 # Development Setup
 
 1. Clone or download the repository:
@@ -59,7 +56,6 @@ python main.py
 Program was made with EEL which allows the backend to be with Python,
 To launch the project run `main.py` 
 
----
 # Building an executable
 
 ```
@@ -68,6 +64,5 @@ python -m eel main.py web --onefile --noconsole
 
 Distribution will be on `dist` folder as `main.exe`
 
----
-License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
