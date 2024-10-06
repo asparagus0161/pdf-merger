@@ -10,7 +10,18 @@ A desktop application that allows users to visually select, arrange, and merge P
 
 ![](image.png)
 
-#Development Setup
+# Frontend
+In `web` folder
+- HTML/CSS
+- JavaScript
+# Backend
+`main.py`
+- Python Backend
+- pyinstaller
+- eel
+- pypdf
+
+# Development Setup
 
 1. Clone or download the repository:
 
@@ -35,4 +46,10 @@ source venv/bin/activate
 
 ```
 pip install -r requirements.txt
+```
+
+# Building an executable
+
+```
+python -m eel main.py web --onefile --noconsole
 ```
